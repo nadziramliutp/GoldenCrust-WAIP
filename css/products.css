@@ -1,0 +1,11 @@
+.btn{
+    background-color:goldenrod;
+    transition: all 0.2s;
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgba(194, 169, 105, 0.692);
+    color:rgb(110, 86, 29);
+    font-weight: bold;
+}

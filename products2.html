@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>GoldenCrust Products</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+
+    <script> //add to cart 
+      function addToCart(itemName, itemPrice) {
+        console.log(itemName + ": RM" + itemPrice.toFixed(2));
+        // You can expand this function to update the cart display, send data to a server, etc.
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="GC-Icon-Img" src="pic/GoldenCrust Icon.png" alt="">
+            <h2>Golden<em>Crust</em></h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li> 
+              <li class="nav-item active">
+                <a class="nav-link" href="products.html">Our Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary text-white" href="cart.php">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>new tasty foods</h4>
+              <h2> Butter. Flakes. Love.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filters">
+              <ul>
+                  <li class="active" data-filter="*">All Products</li>
+                  <li data-filter=".des">Featured</li>
+                  <li data-filter=".dev">Flash Deals</li>
+                  <li data-filter=".gra">Last Minute</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="filters-content">
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-4 all des">
+                      <div class="product-item">
+                        <a href="#"><img src="pic/☕️ Luxurious Eclairs with Chocolate and Vanilla Cream 🍫.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4>Mocha Dream Éclair</h4></a>
+                          <h6>RM8.00</h6>
+                          <p>A rich and creamy éclair, filled with smooth mocha-flavored cream and topped with a luscious layer of dark chocolate glaze.
+                             Garnished with coffee beans and a dusting of cocoa powder, this éclair is a decadent treat for coffee and chocolate lovers alike.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Mocha Dream Éclair', 8.00)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all dev">
+                      <div class="product-item">
+                        <a href="#"><img src="pic/❤️.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4 style="margin-bottom: 5px;">Strawberry Cream</h4></a>
+                          <a href="#"><h4>Blossom Croissant</h4></a>
+                          <h6>RM12.00</h6>
+                          <p>A flaky, buttery croissant filled with fresh whipped cream and layered with juicy strawberries.
+                             Finished with a light dusting of powdered sugar and delicate edible flowers,
+                             this croissant offers a delightful combination of sweetness and freshness in every bite.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Strawberry Cream Blossom Croissant', 12.00)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all gra">
+                      <div class="product-item">
+                        <a href="#"><img src="pic/Aesthetic pastry, blackberrys, aesthetic food, baked goods, baking inspiration.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4 style="margin-bottom: 5px;">Blackberry Bloom Tartlet</h4></a>
+                          <h6>RM8.00</h6>
+                          <p>A delicate tartlet topped with cream piped into beautiful flower shapes and adorned with fresh blackberries.
+                             The crisp, buttery crust and the smooth cream create a perfect balance of textures,
+                             while the blackberry adds a refreshing burst of flavor to this elegant dessert.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Blackberry Bloom Tartlet', 8.00)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all gra">
+                      <div class="product-item">
+                        <a href="#"><img src="pic/pretty food.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4 style="margin-bottom: 5px;">Mixed-Macarons</h4></a>
+                          <h6>RM10.00</h6>
+                          <p>A selection of gourmet macarons in a variety of colors and flavors.
+                            These delicate cookies are known for their airy texture and intricate designs, making them a luxurious treat.
+                            The raspberry and pistachio flavors are a perfect combination of sweet and tart.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Mixed-Macarons', 10.00)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all dev">
+                      <div class="product-item">
+                        <a href="#"><img src="pic/잼잼 on Instagram_ _Strawberry earl grey pastry🍓….jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4>Strawberry Shortcake</h4></a>
+                          <h6>RM10.50</h6>
+                          <p>A flaky, buttery croissant filled with fresh strawberries and whipped cream.
+                             This classic French pastry is both delicious and visually appealing, making it perfect for any occasion.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Strawberry Shortcake', 10.50)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all des">
+                      <div class="product-item">
+                        <a href="#"><img src="pic\Churro Bites - Cooking Classy.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4 style="margin-bottom: 5px;">Churros with Chocolate</h4></a>
+                          <a href="#"><h4>Sauce</h4></a>
+                          <h6>RM7.00</h6>
+                          <p>A plate of warm, golden churros dusted with cinnamon and served with a decadent chocolate dipping sauce.
+                             These fried dough pastries are a classic Spanish treat that are perfect for sharing.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Churros with Chocolate Sauce', 7.00)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <ul class="pages">
+              <li><a href="products.html"><i class="fa fa-angle-double-left"></i></a></li>
+              <li><a href="products.html">1</a></li>
+              <li class="active"><a href="products2.html">2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright &copy; 2024 GoldenCrust utp.edu.my
+            
+            - TFB1063 Web Application &amp Integrative Programming</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="javascript/cart.js" defer></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>

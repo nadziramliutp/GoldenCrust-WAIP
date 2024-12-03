@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>GoldenCrust Online Order</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="GC-Icon-Img" src="pic/GoldenCrust Icon.png" alt="">
+            <h2>Golden<em>Crust</em></h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Our Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary text-white" onclick="checklogin()" href="cart.php">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>GoldenCrust</h4>
+            <h2>Best Croissant Sandwich in Town</h2>
+          </div>
+        </div>
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>Experience</h4>
+            <h2>The local-taste croissant</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>Savour</h4>
+            <h2>Every bite</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filters-content">
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-4 all des">
+                      <div class="product-item">
+                        <a href="#"><img src="assets/images/product_01.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4>Chicken Slice & Cheese</h4></a>
+                          <h6>RM8.00</h6>
+                          <p>Usually a go-to for a light lunch snack, this croissant filled with 3 chicken slice and cheese. Best serves in hot</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Chicken Slice & Cheese', 8.00)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all dev">
+                      <div class="product-item">
+                        <a href="#"><img src="assets/images/product_02.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4>Scrambled Egg</h4></a>
+                          <h6>RM6.00</h6>
+                          <p>Best-Seller breakfast choice among our customer, taste the mayonaise scrambled egg with our croissant</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Scrambled Egg', 6.00)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all gra">
+                      <div class="product-item">
+                        <a href="#"><img src="assets/images/product_03.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4 style="margin-bottom: 5px;">Ham & Egg</h4></a>
+                          <a href="#"><h4>Croissant Sandwich</h4></a>
+                          <h6>RM8.50</h6>
+                          <p>A buttery, flaky croissant filled with creamy scrambled eggs, savory ham, crisp lettuce, and a slice of cheese.
+                             Perfectly balanced for a delightful breakfast or brunch, offering a burst of flavor with every bite.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Ham & Egg Croissant Sandwich', 8.50)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all gra">
+                      <div class="product-item">
+                        <a href="#"><img src="assets/images/product_04.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4 style="margin-bottom: 5px;">Raspberry Pistachio</h4></a>
+                          <a href="#"><h4>Croissant</h4></a>
+                          <h6>RM10.60</h6>
+                          <p>This unique croissant is dipped in a sweet raspberry glaze and sprinkled with crushed pistachios and dried raspberry bits.
+                            A delicious blend of tangy, nutty, and sweet flavors, adding an exciting twist to the classic croissant experience.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Raspberry Pistachio Croissant', 10.60)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all dev">
+                      <div class="product-item">
+                        <a href="#"><img src="assets/images/product_05.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4>Classic Butter Croissant</h4></a>
+                          <h6>RM7.50</h6>
+                          <p>A beautifully golden, flaky croissant with a crisp outer layer and a soft, buttery inside.
+                            Perfectly baked to achieve that classic French croissant texture and flavor. A delightful treat for any time of day.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Classic Butter Croissant', 7.50)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all des">
+                      <div class="product-item">
+                        <a href="#"><img src="assets/images/product_06.jpg" alt=""></a>
+                        <div class="down-content">
+                          <a href="#"><h4>Almond Croissant</h4></a>
+                          <h6>RM9.00</h6>
+                          <p>A rich almond-filled croissant topped with sliced almonds and a dusting of powdered sugar.
+                             This croissant offers a sweet, nutty flavor and a satisfying crunch, making it a perfect indulgence for almond lovers.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <button class="btn mt-3" onclick="addToCart('Almond Croissant', 9.00)">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="best-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>About GoldenCrust</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <h4>We serve you : Student</h4>
+              <p>At GoldenCrust, we specialize in freshly baked pastries, including croissants, macarons, tarts, cakes, and savory snacks. Our mission is to provide delicious treats at affordable prices, making it easy for everyone, especially students, to enjoy with friends. We aim to make pastry indulgence accessible through our convenient online service.</p>
+              <ul class="featured-list">
+                <li>Freshly Homemade Bakes</li>
+                <li> Authentic French Flavors</li>
+                <li>Affordable Delights for All</li>
+                <li>Perfect for Sharing</li>
+              </ul>
+              <a href="about.html" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="pic/GoldenCrust Icon.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-8">
+                  <h4>Got something on your mind? </h4>
+                  <p>Reach us out via <a href="mailto:goldencrust999@gmail.com" >email</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright &copy; 2024 GoldenCrust utp.edu.my
+            
+            - TFB1063 Web Application &amp Integrative Programming</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/index.js"></script>
+    <script src="javascript/cart.js" defer></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+            
+      function checklogin() {
+        // Check if login=true is present in the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const loginStatus = urlParams.get('login');
+
+        // If login is not true, redirect to login page
+        if (loginStatus !== 'true') {
+            // Prevent the default action of the anchor tag
+            event.preventDefault();
+
+            // Redirect to login page
+            window.location.href = 'login.php';
+        } else {
+            // If logged in, proceed to cart page
+            // No action needed as href already points to 'cart.php'
+        }
+      }
+            // Function to show the custom input box
+            function showPrompt() {
+                document.getElementById("overlay").style.display = "block";
+                document.getElementById("inputBox").style.display = "block";
+            }
+            // Function to close the input box
+            function closePrompt() {
+                document.getElementById("overlay").style.display = "none";
+                document.getElementById("inputBox").style.display = "none";
+            }
+            // Function to handle form submission
+            function submitData() {
+                const email = document.getElementById("emailInput").value;
+                const wishlist = document.getElementById("wishlistInput").value;
+
+                if (email && wishlist) {
+                    console.log("Email:", email);
+                    console.log("Wishlist:", wishlist);
+                    alert(`Submitted:\nEmail: ${email}\nWishlist: ${wishlist}`);
+                    closePrompt();
+                } else {
+                    alert("Please fill in all fields!");
+                }
+            }
+
+    </script>
+   
+
+  </body>
+
+</html>

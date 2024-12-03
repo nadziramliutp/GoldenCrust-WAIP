@@ -1,0 +1,52 @@
+.banner .text-content h4{
+    color: goldenrod;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.5),  /* Bottom-right shadow */
+    -2px -2px 4px rgba(0, 0, 0, 0.5), /* Top-left shadow */
+    2px -2px 4px rgba(0, 0, 0, 0.5),  /* Bottom-left shadow */
+    -2px 2px 4px rgba(0, 0, 0, 0.5); /* Top-right shadow */
+}
+
+.banner .text-content h2{
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.3),  
+    -2px -2px 4px rgba(0, 0, 0, 0.3), 
+    2px -2px 4px rgba(0, 0, 0, 0.3),  
+    -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.navbar-brand{
+    display: inline-flex;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+    background-color: #ffffff; 
+  }
+  
+.body-scrolled {
+    background-color: #f7efdb; 
+}
+
+.product-item{
+    background-color: rgb(236, 226, 204);
+}
+
+.btn{
+    background-color:goldenrod;
+    transition: all 0.2s;;
+}
+
+.btn:hover{
+    background-color: rgba(194, 169, 105, 0.692);
+    color:rgb(110, 86, 29);
+    font-weight: bold;
+}
+
+
+  
